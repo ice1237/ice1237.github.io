@@ -10,12 +10,21 @@ p{
 	width: 1200px;
 	background-color: #CCC;
 	height: 550px;
-	background-image: url(%E6%B3%A8%E5%86%8C.jpg);
-	background-repeat: no-repeat;
-	background-position: 50px center;
 	margin-top: 40px;
 	margin-left: 50px;
 	position: relative;
+}
+.zhuce .gundon {
+	height: 470px;
+	width: 700px;
+	margin-left: 25px;
+	position: absolute;
+	top: 25px;
+}
+.gundon marquee img {
+	display: block;
+	float: left;
+	margin-top: 30px;
 }
 form{
 	font-family: Arial;
@@ -29,13 +38,24 @@ form{
 	display: block;
 	margin-left: 775px;
 	position: absolute;
-	top: 50px;
+	top: 60px;
+}
+.zhuce div {
+	height: 32px;
+	width: 32px;
 }
 </style>
 </head>
 
 <body>
 <div class="zhuce"> 
+<div class="gundon"><marquee height="300px" scrollamount="5" hspace="10" vspace="10">
+   <img src="注册/注册1.jpg" width="546" height="410"  />
+   <img src="注册/注册2.jpg" width="627" height="410" />
+   <img src="注册/注册3.jpg" width="614" height="410" />
+   <img src="注册/注册4.jpg" width="594" height="410" />
+</marquee>
+</div>
 <form action="" method="post">
 <p>用户名：<input class="txt" type="text" name="comments" size="=15"/></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -55,6 +75,11 @@ form{
   <input class="btn" type="submit" value="注册"/>
   <input class="btn" type="reset" value="重置" /></p>
 </form>
+</div>
+<div>
+  <audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop">
+  <source src="登录界面背景音乐.mp3" type="audio/mpeg" />
+</audio>
 </div>
 </body>
 </html>
