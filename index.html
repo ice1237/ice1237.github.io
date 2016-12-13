@@ -20,7 +20,13 @@ p{text-indent:2em;font-size:15px;line-height:120%}
 }
  
 
-#head_top_food{width:950px;height:20px;background-color:#FC3;float:left}
+#head_top_food{
+	width: 950px;
+	height: 20px;
+	background-color: #FC3;
+	float: left;
+	position: relative;
+}
 #food .food_1 p a {
 	color: #000;
 	text-decoration: none;
@@ -92,6 +98,14 @@ p{text-indent:2em;font-size:15px;line-height:120%}
 	margin-left: 7px;
 	border: 8px solid #FC9;
 }
+.menu .yincang {
+	height: 250px;
+	width: 930px;
+	position: absolute;
+	background-color: #FFF;
+	left: 10px;
+	display: none;
+}
 #picture .picture1 a:hover img {
 	filter:;
 }
@@ -141,9 +155,21 @@ p{text-indent:2em;font-size:15px;line-height:120%}
 	margin-left: auto;
 	margin-right: auto
 }
+.menu:hover .yincang {
+	display: block;
+	z-index: 100;
+	height: 250px;
+	width: 930px;
+	overflow: visible;
  
+}
+.menu .yincang img {
+	margin-top: 15px;
+	margin-left: 50px;
+	position: absolute;
+	left: 50px;
  
-
+}
 </style>
 </head>
 
@@ -154,16 +180,16 @@ p{text-indent:2em;font-size:15px;line-height:120%}
       <img src="logo.jpg" width="150" height="140" /></div>
      <div id="head_top_right">
        <div class="denglu">
-         <p><a href="https://ice1237.github.io/登录.html">登录</a><a href="https://ice1237.github.io/注册.html"> 注册</a> </div>
+         <p><a href="https://ice1237.github.io/登录.html">登录</a><a href="https://ice1237.github.io/注册.html"> 注册</a><a href="https://ice1237.github.io/ice1234.html"> Tiddlyspace</a> </div>
       
      </div>
      <div id="head_top_food">  
        <div class="menu"><a href="#">首页</a></div>
-       <div class="menu"><a href="#">形状设计</a></div>
-       <div class="menu"><a href="#">配方</a></div>
-       <div class="menu"><a href="#">资源共享</a></div>
-       <div class="menu"><a href="#">专用器具</a></div>
-       <div class="menu"><a href="#">烘焙教程</a></div>
+       <div class="menu"><a href="#">形状设计</a><div class="yincang"><img src="形状设计1.jpg" width="250" height="220" /></div></div>
+       <div class="menu"><a href="#">配方</a><div class="yincang"> <img src="配方.jpg" width="329" height="220" /></div></div>
+       <div class="menu"><a href="#">资源共享</a><div class="yincang"><img src="形状设计3.jpg" width="270" height="220" /></div></div>
+       <div class="menu"><a href="#">专用器具</a><div class="yincang"><img src="专用器具.jpg" width="275" height="220" /></div></div>
+       <div class="menu"><a href="#">烘焙教程</a><div class="yincang"><img src="烘焙教程.jpg" width="275" height="220" /></div></div>
      </div>
    </div>
   <div id="body">
